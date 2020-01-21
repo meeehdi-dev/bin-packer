@@ -1,0 +1,23 @@
+{
+  "name": "bin-packer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mehdi <mehdi.mhiri@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "autogypi": "autogypi",
+    "node-gyp": "node-gyp",
+    "node-gyp:build": "node-gyp configure build",
+    "ndts": "ndts",
+    "test": "ts-node index.ts"
+  },
+  "dependencies": {
+    "autogypi": "^0.2.2",
+    "nbind": "^0.3.15",
+    "node-gyp": "^6.1.0"
+  },
+  "devDependencies": {
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
