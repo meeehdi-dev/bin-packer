@@ -5,11 +5,10 @@
   "author": "Mehdi <mehdi.mhiri@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "autogypi": "autogypi",
-    "node-gyp": "node-gyp",
-    "node-gyp:build": "node-gyp configure build",
-    "ndts": "ndts",
-    "test": "ts-node index.ts"
+    "build": "autogypi && node-gyp configure build",
+    "typings": "mkdir lib && ndts . > lib/packer.d.ts",
+    "test": "ts-node index.ts",
+    "clean": "rm -rf build lib"
   },
   "dependencies": {
     "autogypi": "^0.2.2",

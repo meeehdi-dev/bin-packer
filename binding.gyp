@@ -1,7 +1,6 @@
 {
 	"targets": [
 		{
-			"target_name": "binpacker",
 			"includes": [
 				"auto.gypi"
 			],

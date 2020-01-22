@@ -1,7 +1,7 @@
 import * as nbind from "nbind";
-import * as LibTypes from './lib-types';
+import * as PackerTypes from './lib/packer';
 
-const lib = nbind.init<typeof LibTypes>().lib;
+const lib = nbind.init<typeof PackerTypes>().lib;
 
 const packer = new lib.Packer();
 const packs = packer.pack([], []);
